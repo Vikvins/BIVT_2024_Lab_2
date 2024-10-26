@@ -312,7 +312,7 @@ public class Program
         {
             double x = double.Parse(Console.ReadLine());
             double y = double.Parse(Console.ReadLine());
-            if (r1*r2 <= (x*x + y*y) && (x*x + y*y) <= r2*r2)
+            if ((r1*r1 <= (x*x + y*y)) && ((x*x + y*y) <= r2*r2))
             {
                 answer += 1;
             }
@@ -352,7 +352,7 @@ public class Program
         {
             double x = double.Parse(Console.ReadLine());
             double y = double.Parse(Console.ReadLine());
-            if ((x <= Math.PI) && (y >= 0) && (y <= Math.Sin(x)))
+            if ((x >= 0) && (x <= Math.PI) && (y >= 0) && (y <= Math.Sin(x)))
             {
                 answer += 1;
             }
